@@ -9,6 +9,7 @@
   --brand-color-black2: rgba(0, 0, 0, 1);
   --brand-color-white4: rgba(236, 236, 236, 1);
   --brand-color-white5: rgba(238, 238, 238, 1);
+  --brand-color-grey: rgba(175, 177, 184, 1);
 }
 
 *,
@@ -38,7 +39,7 @@
   list-style: none;
   gap: 30px;
   padding-left: 0px;
-  padding-bottom: 94px;
+  padding-bottom: 16px;
 }
 
 .menu2 .link2 {
@@ -330,7 +331,11 @@
 }
 
 .solution-order {
-  background-color: var(--brand-color-black);
+  background-image: url(/images/background_colour.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1600px, cover;
+  align-items: center;
   max-width: 100%;
   margin-bottom: 94px;
 }
@@ -441,5 +446,52 @@
 .joinus-content {
   display: flex;
 
-  text-align: left;
+  text-align: center;
+}
+
+.envelope {
+  border-radius: 8px;
+  fill: black;
+}
+
+.envelope:hover {
+  fill: red;
+}
+
+.smartphone {
+  border-radius: 8px;
+  fill: black;
+}
+
+.smartphone:hover {
+  fill: red;
+}
+
+.border {
+  border: 2px solid #2a2a2a;
+  border-radius: 8px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center_2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.advantage-icon {
+  padding: 25px 100px;
+  background-color: var(--brand-color-white3);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.advantage-icon2 {
+  padding: 25px 65px;
+  background-color: var(--brand-color-white);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 2px solid var(--brand-color-blue);
 }
