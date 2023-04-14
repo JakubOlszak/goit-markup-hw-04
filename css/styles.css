@@ -452,7 +452,7 @@
   border-radius: 8px;
 }
 
-.envelope:hover {
+.envelope:hover .envelope:focus .envelope:active {
   fill: var(--brand-color-blue);
 }
 
@@ -460,7 +460,7 @@
   border-radius: 8px;
 }
 
-.smartphone:hover {
+.smartphone:hover .smartphone:focus .smartphone:active {
   fill: var(--brand-color-blue);
 }
 
