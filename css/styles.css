@@ -293,7 +293,7 @@
   line-height: 1.1875;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   color: var(--brand-color-grey);
 }
 
@@ -471,7 +471,9 @@
 
 .center {
   display: flex;
+  gap: 22px;
   justify-content: center;
+  padding-bottom: 30px;
 }
 .center_2 {
   display: flex;
