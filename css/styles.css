@@ -324,6 +324,7 @@
 
 .team {
   background-color: var(--brand-color-white3);
+  padding-bottom: 94px;
 }
 
 .what_we_do {
@@ -475,6 +476,11 @@
   justify-content: center;
   padding-bottom: 30px;
 }
+
+.center:hover {
+  color: var(--brand-color-blue);
+}
+
 .center_2 {
   display: flex;
   justify-content: space-evenly;
@@ -492,5 +498,11 @@
   background-color: var(--brand-color-white);
   margin-bottom: 30px;
   border-radius: 4px;
-  border: 2px solid var(--brand-color-blue);
+  border: 1px solid var(--brand-color-grey);
+  color: var(--brand-color-grey);
+}
+
+.advantage-icon2:hover {
+  border: 1px solid var(--brand-color-blue);
+  color: var(--brand-color-blue);
 }
