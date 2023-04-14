@@ -450,20 +450,18 @@
 
 .envelope {
   border-radius: 8px;
-  fill: black;
 }
 
 .envelope:hover {
-  fill: red;
+  fill: var(--brand-color-blue);
 }
 
 .smartphone {
   border-radius: 8px;
-  fill: black;
 }
 
 .smartphone:hover {
-  fill: red;
+  fill: var(--brand-color-blue);
 }
 
 .border {
