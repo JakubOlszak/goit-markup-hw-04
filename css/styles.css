@@ -322,6 +322,12 @@
   text-decoration: none;
 }
 
+.footer-media {
+  gap: 10px;
+
+  fill: white;
+}
+
 .team {
   background-color: var(--brand-color-white3);
   padding-bottom: 94px;
@@ -439,31 +445,42 @@
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: center;
-  padding-top: 72px;
   padding-bottom: 20px;
 }
 
 .joinus-content {
   display: flex;
-  text-align: center;
+
+  flex-direction: column;
+}
+
+.media {
+  fill: rgba(175, 177, 184, 1);
+  padding: 12px;
+}
+.media:hover {
+  background-color: var(--brand-color-blue);
+  fill: var(--brand-color-white);
+  border-radius: 50%;
 }
 
 .envelope {
   border-radius: 8px;
-  fill: red;
 }
 
-.envelope:hover .envelope:focus .envelope:active {
-  fill: green;
+.envelope:hover,
+.envelope:focus,
+.envelope:active {
+  fill: var(--brand-color-blue);
 }
 
 .smartphone {
   border-radius: 8px;
-  fill: red;
 }
 
-.smartphone:hover .smartphone:focus .smartphone:active {
+.smartphone:hover,
+.smartphone:focus,
+.smartphone:active {
   fill: var(--brand-color-blue);
 }
 
@@ -477,10 +494,6 @@
   gap: 22px;
   justify-content: center;
   padding-bottom: 30px;
-}
-
-.center:hover {
-  color: var(--brand-color-blue);
 }
 
 .center_2 {
