@@ -451,15 +451,16 @@
 
 .envelope {
   border-radius: 8px;
-  color: red;
+  fill: red;
 }
 
 .envelope:hover .envelope:focus .envelope:active {
-  fill: var(--brand-color-blue);
+  fill: green;
 }
 
 .smartphone {
   border-radius: 8px;
+  fill: red;
 }
 
 .smartphone:hover .smartphone:focus .smartphone:active {
