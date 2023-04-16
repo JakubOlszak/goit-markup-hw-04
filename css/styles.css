@@ -455,10 +455,12 @@
 }
 
 .media {
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--brand-color-grey);
   padding: 12px;
 }
-.media:hover {
+.media:hover,
+.media:focus,
+.media:active {
   background-color: var(--brand-color-blue);
   fill: var(--brand-color-white);
   border-radius: 50%;
@@ -493,6 +495,7 @@
   display: flex;
   gap: 22px;
   justify-content: center;
+  align-items: center;
   padding-bottom: 30px;
 }
 
