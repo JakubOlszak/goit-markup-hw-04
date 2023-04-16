@@ -522,5 +522,5 @@
 
 .advantage-icon2:hover {
   border: 1px solid var(--brand-color-blue);
-  color: var(--brand-color-blue);
+  fill: var(--brand-color-blue);
 }
