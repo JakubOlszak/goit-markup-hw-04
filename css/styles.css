@@ -19,7 +19,6 @@
   --footer-email-tel-color: rgba(255, 255, 255, 0.6);
 }
 
-/* ------------BODY----------------- */
 body {
   display: block;
   width: 1600px;
@@ -33,7 +32,6 @@ body {
   background-color: var(--primary-white-color);
 }
 
-/* Wyzerowywanie*/
 h1,
 h2,
 h3,
@@ -49,19 +47,18 @@ button {
 address {
   font-style: normal;
 }
-/* Klasa do zerowania właściwości bazowych list (ul) */
+
 .list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-/* Klasa, aby zresetować podstawowe właściwości odwołań */
+
 .link {
   text-decoration: none;
   color: inherit;
 }
 
-/* Właściwości do prawidłowego wyświetlania obrazów */
 img {
   display: block;
   max-width: 100%;
@@ -75,13 +72,11 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: 10px solid red; */
 }
 .section {
   padding: 94px 0;
 }
 
-/* Styl nagłówka (nawigacja w witrynie+kontakty) */
 .header-container {
   display: flex;
   align-items: center;
@@ -150,9 +145,8 @@ img {
 }
 .icon {
   fill: currentColor;
-  /* fill:#757575; */
+
   margin-right: 10px;
-  /* align-items: center; */
 }
 .icon:hover,
 .icon:focus {
@@ -170,7 +164,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* Stylizacja bohatera */
 .hero {
   max-width: 1600px;
   background-color: var(--hero-background);
@@ -179,7 +172,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero.jpg");
+    url("../images/background_colour.jpg");
   background-repeat: no-repeat;
   text-align: center;
   padding: 200px 0;
@@ -213,7 +206,6 @@ img {
   background-color: var(--button-active-bg);
 }
 
-/*Funkcje*/
 .section-features {
   padding-bottom: 0;
 }
@@ -259,7 +251,6 @@ img {
   color: var(--secondary-text-color);
 }
 
-/* Czym się zajmujemy */
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -277,7 +268,6 @@ img {
   margin-right: 30px;
 }
 
-/* Nasz zespół */
 .team-section {
   background-color: var(--team-background-color);
 }
@@ -342,7 +332,6 @@ img {
   margin-right: 10px;
 }
 
-/* Stali klienci */
 .clients-list {
   display: flex;
 }
@@ -367,7 +356,6 @@ img {
   fill: currentColor;
 }
 
-/*Basement*/
 .flex-container {
   display: flex;
   align-items: baseline;
@@ -454,7 +442,6 @@ img {
   color: var(--white-text-color);
 }
 
-/*----------------Portfolio---------------------*/
 .filter {
   display: flex;
   justify-content: center;
