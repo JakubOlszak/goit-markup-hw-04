@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -12,238 +18,277 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-      }
-    </style>
   </head>
+
   <body>
-    <header class="header-order header-content">
-      <div class="container navigate">
-        <nav class="navigate">
-          <div>
-            <a class="contact-header links" href="./">
-              <span class="web">Web</span><span class="studio">Studio</span>
-            </a>
-          </div>
-
-          <div>
-            <ul class="navigate2">
-              <li>
-                <a class="contact-header" href="./"> Agencja </a>
-              </li>
-              <li>
-                <a class="contact-header" href="portfolio.html"> Portfolio </a>
-              </li>
-              <li><a class="contact-header" href="#"> Kontakt </a></li>
-            </ul>
-          </div>
+    <header>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="header-logo" href="./index.html">
+            <span class="logo-blue">Web</span
+            ><span class="logo-black">Studio</span>
+          </a>
+          <ul class="site-nav list">
+            <li><a href="./index.html" class="link current">WebStudio</a></li>
+            <li>
+              <a href="./portfolio.html" class="site link">Portfolio</a>
+            </li>
+            <li><a href="#" class="site link">Kontakt</a></li>
+          </ul>
         </nav>
-
-        <div class="separate">
-          <svg width="16px" height="12px">
-            <use href="/images/icons.svg#icon-envelope"></use>
-          </svg>
-
-          <a class="contact-header2" href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
-
-          <svg width="10px" height="16px">
-            <use href="/images/icons.svg#icon-smartphone"></use>
-          </svg>
-
-          <a class="contact-header2" href="tel:+48111111111 ">
-            +48 111 111 111
-          </a>
-        </div>
+        <ul class="header-contacts list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-contact link">
+              <svg class="icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope-1"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+48111111111" class="header-contact link">
+              <svg class="icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone-1"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <section class="buttons-order">
-        <div class="container buttons-content">
-          <button class="buttons" type="button">Wszystkie</button>
-          <button class="buttons" type="button">Strony</button>
-          <button class="buttons" type="button">Aplikacje</button>
-          <button class="buttons" type="button">Dizajn</button>
-          <button class="buttons" type="button">Marketing</button>
-        </div>
-      </section>
-
-      <section>
+      <section class="section portfolio-section">
         <div class="container">
-          <ul class="menu_3">
-            <li>
-              <figure class="link_3">
+          <ul class="filter list">
+            <li class="item-button">
+              <button type="button" class="filter-button">Wszystkie</button>
+            </li>
+            <li class="item-button">
+              <button type="button" class="filter-button">Strony</button>
+            </li>
+            <li class="item-button">
+              <button type="button" class="filter-button">Aplikacje</button>
+            </li>
+            <li class="item-button">
+              <button type="button" class="filter-button">Dizajn</button>
+            </li>
+            <li class="item-button">
+              <button type="button" class="filter-button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="portfolio-project list">
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
                 <img
-                  alt="A picture of..."
-                  width="370"
-                  height="294"
                   src="images/Technocrack.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Technocrack</p>
-                  <p class="text2">Strona internetowa</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">Technocrack</h2>
+                  <p class="projects-text">Strona internetowa</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
                   src="images/Grafika_New_Orlean_vs_Golden_Star.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Grafika New Orlean vs Golden Star</p>
-                  <p class="text2">Dizajn</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">
+                    Grafika New Orlean vs Golden Star
+                  </h2>
+                  <p class="projects-text">Dizajn</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
                   src="images/Restauracja_Seafood.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Restauracja Seafood</p>
-                  <p class="text2">Aplikacja</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">Restauracja Seafood</h2>
+                  <p class="projects-text">Aplikacja</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
                   src="images/Projekt_Prime.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Projekt Prime</p>
-                  <p class="text2">Marketing</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">Projekt Prime</h2>
+                  <p class="projects-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
                   src="images/Projekt_Boxes.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Projekt Boxes</p>
-                  <p class="text2">Aplikacja</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">Projekt Boxes</h2>
+                  <p class="projects-text">Aplikacja</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
                   src="images/Inspiration_has_no_Borders.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Inspiration has no Borders</p>
-                  <p class="text2">Strona internetowa</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="projects-text">Strona internetowa</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
                   src="images/Magazyn_Limited_Edition.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Magazyn Limited Edition</p>
-                  <p class="text2">Dizajn</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">Magazyn Limited Edition</h2>
+                  <p class="projects-text">Dizajn</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
                   src="images/Projekt_LAB.jpg"
-                />
-                <figcaption class="link_4">
-                  <p class="text">Projekt LAB</p>
-                  <p class="text2">Marketing</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="link_3">
-                <img
                   alt="A picture of..."
                   width="370"
                   height="294"
-                  src="images/Growing_Business.jpg"
+                  class="project-img"
                 />
-                <figcaption class="link_4">
-                  <p class="text">Growing Business</p>
-                  <p class="text2">Aplikacja</p>
-                </figcaption>
-              </figure>
+                <div class="project-border">
+                  <h2 class="project-title">Projekt LAB</h2>
+                  <p class="projects-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a href="#" class="project-link">
+                <img
+                  src="images/Growing_Business.jpg"
+                  alt="A picture of..."
+                  width="370"
+                  height="294"
+                  class="project-img"
+                />
+                <div class="project-border">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="projects-text">Aplikacja</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
 
-    <footer>
-      <section class="footer-settings">
-        <div class="container footer-content">
-          <a
-            class="contact-header-down"
-            href="http://google.com"
-            style="text-decoration: none"
-            target="_blank"
-            rel="noreferrer noopener"
-            title="WebStudio"
-          >
-            <span class="web">Web</span><span class="studio2">Studio</span>
-          </a>
-
-          <a class="contact-footer" href="m.Warszawa_Aleje_Jerozolimskie_21"
-            >m.Warszawa, Aleje Jerozolimskie 21
-          </a>
-          <a class="contact-footer2" href="info@example.com"
-            >info@example.com
-          </a>
-
-          <a class="contact-footer3" href="tel:+48111111111"
-            >+48 111 111 111
-          </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="flex-container">
+          <div class="footer-wrapper">
+            <a class="logo-footer" href="./index.html">
+              <span class="logo-blue">Web</span
+              ><span class="logo-white">Studio</span>
+            </a>
+            <address class="address">
+              <ul class="footer-contacts list">
+                <li class="footer-item">
+                  <a
+                    class="footer-address link"
+                    href="https://www.google.com/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/@52.2305319,21.0134568,17z/data=!3m1!4b1!4m6!3m5!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317!16s%2Fg%2F11csnfr8s8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    m.Warszawa, Aleje Jerozolimskie 21
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="mailto:info@example.com" class="footer-contact link">
+                    info@example.com
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="tel:++48111111111" class="footer-contact link">
+                    +48111111111
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join-p">DOŁĄCZ DO NAS</p>
+            <ul class="team-icons">
+              <li class="list-icon">
+                <a href="" class="link-icon">
+                  <svg class="icon-team">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-icon">
+                <a href="" class="link-icon">
+                  <svg class="icon-team">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-icon">
+                <a href="" class="link-icon">
+                  <svg class="icon-team">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-icon">
+                <a href="" class="link-icon">
+                  <svg class="icon-team">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
